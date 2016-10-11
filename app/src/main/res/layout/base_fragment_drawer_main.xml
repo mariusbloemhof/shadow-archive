@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="240dp"
+    android:layout_height="match_parent"
+    android:id="@+id/left_layout"
+    android:orientation="vertical"
+    android:background="#111121"
+    android:layout_gravity="start">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <!--<ImageView-->
+                <!--android:layout_width="240dp"-->
+                <!--android:layout_height="240dp"-->
+                <!--android:id="@+id/bg_drawer"-->
+                <!--android:layout_alignParentLeft="false" android:layout_alignParentStart="true"-->
+                <!--android:src="@drawable/drawer_bg" android:cropToPadding="true" android:layout_centerInParent="true"/>-->
+        <!--<ImageView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:id="@+id/imageView"-->
+                <!--android:src="@drawable/sportarena_backdrop"-->
+                <!--android:layout_marginBottom="40dp" android:layout_alignParentBottom="true"-->
+                <!--android:layout_centerHorizontal="true" android:cropToPadding="true" android:adjustViewBounds="true"-->
+                <!--android:visibility="gone"/>-->
+        <ListView
+                android:id="@+id/left_drawer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:choiceMode="singleChoice"
+                android:background="@color/titleBarBGColor"
+                android:dividerHeight="1dp"
+                android:layout_below="@+id/linearLayout"/>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" android:id="@+id/linearLayout"
+                android:background="@color/AppCore_Primary" android:visibility="gone">
+            <ImageView android:layout_width="24dp"
+                       android:layout_height="24dp"
+                       android:layout_marginLeft="8dp"
+                       android:layout_gravity="center"
+                       android:src="@android:drawable/ic_menu_search"/>
+            <EditText android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginRight="4dp"
+                      android:layout_marginTop="8dp"
+                      android:layout_marginBottom="8dp"
+                      android:imeOptions="actionSearch"
+                      android:inputType="text"
+                      android:hint="Search"
+                      android:id="@+id/edit_drawer_search"
+                      android:textColor="@android:color/white"
+                      android:textColorHint="@android:color/white"
+                      android:fontFamily="sans-serif-condensed" android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

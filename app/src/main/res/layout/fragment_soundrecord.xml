@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:padding="10dip">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent"
+        android:layout_above="@+id/bottomLL" android:paddingBottom="10dip">
+
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:scaleType="fitCenter" android:src="@drawable/logo" />
+
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="20dip" android:orientation="horizontal">
+
+                <Button android:id="@+id/btnStart" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_weight="1.0"
+                    android:singleLine="true" android:text="Start Recording" />
+
+                <Button android:id="@+id/btnStop" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:layout_weight="1.0"
+                    android:singleLine="true" android:text="Save Recording" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="20dip" android:orientation="horizontal"
+                android:visibility="visible" android:weightSum="2">
+
+                <TextView style="@style/normalTextSize" android:layout_width="0dip"
+                    android:layout_height="wrap_content" android:layout_weight="1"
+                    android:gravity="center" android:text="Contact name" />
+
+                <TextView style="@style/normalTextSize" android:layout_width="0dip"
+                    android:layout_height="wrap_content" android:layout_weight="1"
+                    android:gravity="center" android:text="Choose Recorded Audio" />
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:visibility="visible" android:weightSum="2">
+
+                <Spinner android:id="@+id/contactNameSpinnner" android:layout_width="0dip"
+                    android:layout_height="wrap_content" android:layout_weight="1" />
+
+                <Spinner android:id="@+id/chooseRASpinner" android:layout_width="0dip"
+                    android:layout_height="wrap_content" android:layout_weight="1" />
+            </LinearLayout>
+
+            <EditText android:id="@+id/messageET" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/keychaininputbox_all_corner_round_bg"
+                android:ellipsize="start" android:ems="10" android:gravity="top|left"
+                android:hint="Type message" android:inputType="textMultiLine" android:minLines="3"
+                android:paddingLeft="5dip" android:paddingRight="5dip" android:singleLine="true"
+                android:textColor="@color/blackColor" android:visibility="visible"></EditText>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout android:id="@+id/bottomLL" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+        android:orientation="horizontal" android:weightSum="2">
+
+        <Button android:id="@+id/sendAudioBtn" android:layout_width="0dip"
+            android:layout_height="wrap_content" android:layout_marginRight="5dip"
+            android:layout_weight="1" android:background="@layout/btn_design"
+            android:text="Send Audio" android:textColor="@android:color/white" />
+
+        <Button android:id="@+id/callBtn" android:layout_width="0dip"
+            android:layout_height="wrap_content" android:layout_marginLeft="5dip"
+            android:layout_weight="1" android:background="@layout/btn_design" android:text="Call"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

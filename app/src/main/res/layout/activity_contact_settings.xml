@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contactSettingsLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FF394952"
+    tools:context=".Contact_settings">
+
+    <EditText
+        android:id="@+id/emailId"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBoxText"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="77dp"
+        android:ems="10"
+        android:hint="Enter the contact&apos;s email address."
+        android:inputType="textEmailAddress"
+        android:singleLine="true" />
+
+    <Button
+        android:id="@+id/btnemailSave"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBoxText"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="16dp"
+        android:text="Save Address" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/checkBoxEmail"
+        android:layout_marginBottom="41dp"
+        android:text="Call phone" />
+
+    <CheckBox
+        android:id="@+id/checkBoxEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBoxCall"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="35dp"
+        android:text="Send Email" />
+
+    <CheckBox
+        android:id="@+id/checkBoxText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/checkBoxEmail"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="29dp"
+        android:text="Send Text" />
+
+</RelativeLayout>

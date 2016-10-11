@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/AppCore_Primary">
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView" android:layout_centerInParent="true" android:src="@drawable/logo_splash"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" android:padding="16dp">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginTop="16dp">
+            <TextView android:layout_width="120dp"
+                      android:layout_height="wrap_content"
+                      android:text="Low Severity" android:id="@+id/contact_phone_number" android:textSize="18sp"
+                      android:layout_centerVertical="true"/>
+            <TextView android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Select from list" android:layout_alignParentTop="false"
+                      android:layout_toEndOf="@+id/contact_phone_number" android:layout_marginLeft="16dp"
+                      android:layout_centerVertical="true" android:id="@+id/label_low_severity"/>
+            <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                    <!--android:text="L"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:id="@+id/label_l" android:textColor="#CCC0"-->
+                    <!--android:layout_alignParentTop="true" android:layout_alignParentEnd="true"-->
+                    <!--android:padding="4dp"/>-->
+            <ImageView
+                    android:layout_alignParentTop="true" android:layout_alignParentEnd="true"
+                    android:padding="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_low_severity"
+                    android:id="@+id/imageView2"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+                <TextView android:layout_width="120dp"
+                          android:layout_height="wrap_content"
+                          android:text="High Severity" android:id="@+id/label_location_on" android:textSize="18sp"
+                          android:layout_centerVertical="true"/>
+                <TextView android:layout_width="wrap_content"
+                          android:layout_height="wrap_content"
+                          android:text="Select from list" android:layout_alignParentTop="false"
+                          android:layout_toEndOf="@+id/label_location_on" android:layout_marginLeft="16dp"
+                          android:layout_centerVertical="true" android:id="@+id/label_high_severity"/>
+            <ImageView
+                    android:layout_alignParentTop="true" android:layout_alignParentEnd="true"
+                    android:padding="4dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_high_severity"
+
+                    android:id="@+id/imageView3"/>
+            <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                    <!--android:text="H"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textSize="18sp"-->
+                    <!--android:id="@+id/label_h" android:layout_alignParentTop="true"-->
+                    <!--android:layout_alignParentEnd="true" android:textColor="#CC0000" android:padding="4dp"/>-->
+        </RelativeLayout>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="List of Emergencies"
+                android:id="@+id/label_emergencies" android:layout_marginTop="16dp"/>
+        <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:id="@+id/list_emergencies" android:layout_marginTop="8dp" android:layout_weight="1"/>
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Create New Emergency"
+                android:id="@+id/button_add_emergency"
+                android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</RelativeLayout>

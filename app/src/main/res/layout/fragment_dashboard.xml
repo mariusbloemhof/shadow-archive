@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="240dp"
+              android:layout_height="match_parent"
+              android:id="@+id/right_layout"
+              android:background="@color/AppCore_Primary"
+              android:layout_gravity="end">
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/extra_drawer_image" android:layout_centerVertical="true" android:layout_centerHorizontal="true"
+            android:background="@drawable/logo_ab_servabo"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:padding="16dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Network"
+                android:id="@+id/label_network_connected" android:padding="8dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Device"
+                android:id="@+id/label_device_connected" android:padding="8dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Location"
+                android:id="@+id/label_location_on" android:padding="8dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Bluetooth"
+                android:id="@+id/label_bluetooth_on" android:padding="8dp"/>
+    </LinearLayout>
+</RelativeLayout>

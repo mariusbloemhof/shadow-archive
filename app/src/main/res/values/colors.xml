@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="appBgColor">#121e2a</color>
+    <color name="whiteColor">#ffffff</color>
+    <color name="blackColor">#000000</color>
+    <color name="titleBarBGColor">#2c3e50</color>
+    <color name="titleBarVerticalLineColor">#121e2a</color>
+    <color name="homeScreenLeftColor">#3498db</color>
+    <color name="privacyLeftMenuLeftSideColor">#3498db</color>
+    <color name="connectBtnBgColor">#222F3E</color>
+    <color name="highlight">#F59C</color>
+    <color name="edit">#CFC0</color>
+
+    <color name="AppCore_Primary">@color/appBgColor</color>
+    <color name="AppCore_Secondary">@color/homeScreenLeftColor</color>
+    <color name="AppCore_Tertiary">@color/connectBtnBgColor</color>
+
+</resources>

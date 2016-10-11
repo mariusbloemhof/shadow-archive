@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dip" >
+
+    <LinearLayout
+        android:id="@+id/leftMenuLL"
+        android:layout_width="50dip"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="10dip" >
+
+        <ImageView
+            android:id="@+id/leftMenuImgView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/menu" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/leftLineView"
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@+id/leftMenuLL"
+        android:background="@color/titleBarVerticalLineColor" />
+
+    <TextView
+        android:id="@+id/customWindowTitle"
+        style="@style/largeTextSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/rightLineView"
+        android:layout_toRightOf="@+id/leftLineView"
+        android:gravity="center"
+        android:padding="5dip"
+        android:singleLine="true"
+        android:text="Home"
+        android:textColor="@android:color/white" />
+
+    <View
+        android:id="@+id/rightLineView"
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dip"
+        android:background="@color/titleBarVerticalLineColor" />
+
+</RelativeLayout>

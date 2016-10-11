@@ -1,0 +1,79 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+
+    <style name="CustomWindowTitleBarBG">
+        <item name="android:background">@color/titleBarBGColor</item>
+    </style>
+
+    <style name="TitleBarTheme" parent="android:Theme.Holo">
+        <item name="android:windowTitleSize">45dip</item>
+        <item name="android:windowTitleBackgroundStyle">@style/CustomWindowTitleBarBG</item>
+        <item name="android:listSelector">@drawable/list_item_selector</item>
+        <item name="android:scrollbarThumbVertical">@drawable/rounded_vertical_scroll_track</item>
+        <item name="android:scrollbarThumbHorizontal">@drawable/rounded_vertical_scroll_track</item>
+        <item name="android:scrollbarSize">5dp</item>
+        <item name="android:scrollbarStyle">insideOverlay</item>
+    </style>
+
+    <!-- For Small Text Size -->
+    <style name="smallTextSize" parent="@android:style/TextAppearance">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- For Small Text Size  With Bold -->
+    <style name="smallTextSizeWithBold" parent="@android:style/TextAppearance">
+        <item name="android:textSize">11sp</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- For Normal Text Size -->
+    <style name="normalTextSize" parent="@android:style/TextAppearance">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- For Normal Text Size  With Bold -->
+
+    <style name="normalTextSizeWithBold" parent="@android:style/TextAppearance">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- For Medium Text Size -->
+    <style name="mediumTextSize" parent="@android:style/TextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- For Medium Text Size With Bold -->
+    <style name="mediumTextSizeWidthBold" parent="@android:style/TextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- For Large Text Size -->
+    <style name="largeTextSize" parent="@android:style/TextAppearance">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <!-- For Large Text Size With Bold -->
+    <style name="largeTextSizeWithBold" parent="@android:style/TextAppearance">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

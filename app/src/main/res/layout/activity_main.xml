@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/topicColor"
+    android:gravity="top"
+    android:orientation="vertical">
+
+    <!-->QuickContactBadge
+        android:id="@+id/quickContactBadge1"
+        android:layout_width="174dp"
+        android:layout_height="115dp"
+        android:src="@drawable/logo" /-->
+
+    <ToggleButton
+        android:id="@+id/btnConnect"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:textOff="CONNECT DEVICE"
+        android:textOn="DISCONNECT DEVICE"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnSelectContacts"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:text="@string/select_contacts" />
+
+    <Button
+        android:id="@+id/buttonSettings"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:text="@string/Settings" />
+
+    <Button
+        android:id="@+id/buttonRemoveContacts"
+        android:layout_width="162dp"
+        android:layout_height="wrap_content"
+        android:text="@string/RemoveContacts" />
+
+</LinearLayout>

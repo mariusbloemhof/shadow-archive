@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#121E2A" android:orientation="vertical">
+
+    <!-- 
+    <LinearLayout
+        android:id="@+id/mainLL"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:layout_weight="0.20"
+        android:background="@drawable/bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="@dimen/paddingval" >
+
+            <ImageView
+                android:id="@+id/ImageViewA0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dp_c" />
+
+            <ImageView
+                android:id="@+id/ImageViewA1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dp_c" />
+
+            <ImageView
+                android:id="@+id/ImageViewA2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dp_c" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerPadding="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/paddingval" >
+
+            <ImageView
+                android:id="@+id/ImageViewA3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dp_c" />
+
+            <ImageView
+                android:id="@+id/ImageViewA4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dp_c" />
+
+            <ImageView
+                android:id="@+id/ImageViewA5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dp_c" />
+
+            <ImageView
+                android:id="@+id/ImageViewA6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dp_c" />
+        </LinearLayout>
+ 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:dividerPadding="@dimen/activity_horizontal_margin"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/paddingval" >
+
+            <ImageView
+                android:id="@+id/ImageViewA7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dp_c" />
+
+            <ImageView
+                android:id="@+id/ImageViewA8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dp_c" />
+
+            <ImageView
+                android:id="@+id/ImageViewA9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dp_c" />
+        </LinearLayout>
+    </LinearLayout>-->
+
+    <fragment android:id="@+id/map" android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent" android:layout_height="140dp"
+        android:layout_weight="0.13" />
+
+    <ScrollView android:id="@+id/SvEvents" android:layout_width="match_parent"
+        android:layout_height="150dp" android:layout_weight="0.63">
+
+        <LinearLayout android:id="@+id/LLinSV" android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:orientation="vertical"></LinearLayout>
+    </ScrollView>
+
+    <Button android:id="@+id/triggerBtn" style="?android:attr/buttonStyleSmall"
+        android:layout_width="32dp" android:layout_height="32dp" android:text="o" />
+
+    <Button android:id="@+id/deleteBtn" android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="@layout/btn_design"
+        android:text="@string/create_event" android:textColor="@android:color/white"
+        android:textSize="23sp" />
+
+</LinearLayout>

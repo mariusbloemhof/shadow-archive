@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/AppCore_Primary"
+    android:padding="16dip">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Info"
+                android:id="@+id/info_label" android:layout_marginLeft="8dp"/>
+        <EditText
+            android:id="@+id/edit_scenario_title"
+            style="@style/mediumTextSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter an emergency name..."
+            android:inputType="text"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:singleLine="true"
+            android:textColorHint="#CCC"
+            android:nextFocusDown="@+id/edit_message"
+            android:textColor="#DDD" android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:id="@+id/edit_message"
+            style="@style/mediumTextSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="top|left"
+            android:hint="This message will be sent to your contacts of choice. ex. Help me!"
+            android:inputType="textMultiLine"
+            android:maxLines="10"
+            android:minLines="4"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="8dp"
+            android:singleLine="false"
+            android:textColor="#DDD"
+            android:nextFocusDown="@+id/list_contact_list"
+            android:textColorHint="#CCC"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="View Contacts"
+                android:id="@+id/textView" android:layout_marginLeft="8dp" android:layout_marginTop="16dp"/>
+        <ListView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:id="@+id/list_contact_list"
+                />
+
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add Contacts"
+                android:id="@+id/button_add_contact"/>
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Emergency"
+                android:id="@+id/button_save_scenario"/>
+
+        <!-- For Add Contact Name and Alert type -->
+
+    </LinearLayout>
+</RelativeLayout>
